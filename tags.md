@@ -1,5 +1,5 @@
 ---
-title: Tags
+title: tags
 permalink: /tags/
 layout: page
 excerpt: Sorted article by tags.
@@ -11,12 +11,19 @@ excerpt: Sorted article by tags.
   {{ name }}
 </h4>
 {% for post in site.tags[name] %}
-<article class="posts">
+<!-- <article class="posts">
   <span class="posts-date">{{ post.date | date: "%b %d" }}</span>
   <header class="posts-header">
     <h4 class="posts-title">
       <a href="{{ post.url }}">{{ post.title | escape }}</a>
     </h4>
   </header>
+</article> -->
+
+<article class="post-item">
+  <span class="post-item-date">{{ post.date | date: "%b %d, %Y" }}</span>
+  <h5 class="post-item-title">
+    <a href="{{ post.url }}">{{ post.title | escape }}</a>
+  </h5>
 </article>
 {% endfor %} {% endfor %}

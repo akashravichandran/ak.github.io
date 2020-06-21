@@ -1,18 +1,14 @@
 ---
-title: Colophon
+title: akash ravichandran
 permalink: /about/
 layout: page
-excerpt: Hello peeps, I'm student of computer science from Banyuwangi, living in Jogjakarta. This blog for documentation about my programming journey, running on jekyll, hosting on netlify and using my own simple theme.
-comments: false
+excerpt:
+comments: False
 ---
 
-He's a student from Banyuwangi, living in Jogjakarta. the blog for documentation about his programming 🎒 journey, running on jekyll, hosting on [now.sh](http://now.sh) and using his own theme, he name it <a href="https://github.com/piharpi/jekyll-klise" target="_blank" rel="noopener">klisé</a>, he also loves to learning web technology; but he often forgot, that a reason why him doing the writing.
+Hey Everyone!
 
-If you have a question about him or else, just send a letter to him.
+Myself Akash, working as a Junior Data Scientist. I completed my bachelors in Electronics and Communication Engineering from College of Engineering Guindy, Anna University. My main interests include Robotics, IoT, Machine Learning, AI. I live by the motto ‘Miles to go before I sleep’. My favourite quote is from Steve Jobs - Stay Hungry, Stay Foolish!
 
-You can [report](http://github.com/piharpi/jekyll-klise/issues/new) if there is an broken link(s) or somethings else.
-
-##### may u needs ✨
-
-- {{ site.author.email }}
-- github.com/{{ site.author.username }}
+- Website developed on top of a Jekyll theme [Klise](http://github.com/piharpi/jekyll-klise)
+- Icons from [fontawesome.com](https://fontawesome.com/)
