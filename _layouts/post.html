@@ -36,7 +36,9 @@ layout: compress
           <h1 class="header-title" itemprop="headline">{{ page.title | escape }}</h1>
           {% if page.date %}
           <div class="post-meta">
-            <span><i class="fa fa-clock-o" aria-hidden="true"></i>&nbsp;&nbsp;{{ page.content | reading_time }} read&nbsp;&nbsp;</span>
+            <!-- <span><i class="fa fa-clock-o" aria-hidden="true"></i>&nbsp;&nbsp;{{ page.content | reading_time }} read&nbsp;&nbsp;</span> -->
+            <span><i class="fa fa-clock-o" aria-hidden="true"></i>&nbsp;{% include read_time.html content=page.content %} read&nbsp;&nbsp;</span>
+
             <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
               <i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;&nbsp;{{ page.date | date: "%b %d, %Y" }}&nbsp;&nbsp;
             </time>

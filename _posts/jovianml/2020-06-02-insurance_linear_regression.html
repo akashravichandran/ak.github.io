@@ -40,11 +40,11 @@ categories: jovianml
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
-<div class="input overflow-table">
+<div class="input">
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Uncomment and run the commands below if imports fail</span>
+<div class=" highlight hl-ipython3 overflow-table"><pre><span></span><span class="c1"># Uncomment and run the commands below if imports fail</span>
 <span class="c1"># !conda install numpy pytorch torchvision cpuonly -c pytorch -y</span>
 <span class="c1"># !pip install matplotlib --upgrade --quiet</span>
 <span class="c1"># !pip install jovian --upgrade --quiet</span>
@@ -56,11 +56,11 @@ categories: jovianml
 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
-<div class="input overflow-table">
+<div class="input">
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">torch</span>
+<div class=" highlight hl-ipython3 overflow-table"><pre><span></span><span class="kn">import</span> <span class="nn">torch</span>
 <span class="kn">import</span> <span class="nn">torchvision</span>
 <span class="kn">import</span> <span class="nn">torch.nn</span> <span class="k">as</span> <span class="nn">nn</span>
 <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -76,11 +76,11 @@ categories: jovianml
 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
-<div class="input overflow-table">
+<div class="input">
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">project_name</span><span class="o">=</span><span class="s1">&#39;02-insurance-linear-regression&#39;</span> <span class="c1"># will be used by jovian.commit</span>
+<div class=" highlight hl-ipython3 overflow-table"><pre><span></span><span class="n">project_name</span><span class="o">=</span><span class="s1">&#39;02-insurance-linear-regression&#39;</span> <span class="c1"># will be used by jovian.commit</span>
 </pre></div>
 
     </div>
@@ -97,11 +97,11 @@ categories: jovianml
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
-<div class="input overflow-table">
+<div class="input">
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">DATASET_URL</span> <span class="o">=</span> <span class="s2">&quot;https://hub.jovian.ml/wp-content/uploads/2020/05/insurance.csv&quot;</span>
+<div class=" highlight hl-ipython3 overflow-table"><pre><span></span><span class="n">DATASET_URL</span> <span class="o">=</span> <span class="s2">&quot;https://hub.jovian.ml/wp-content/uploads/2020/05/insurance.csv&quot;</span>
 <span class="n">DATA_FILENAME</span> <span class="o">=</span> <span class="s2">&quot;insurance.csv&quot;</span>
 <span class="n">download_url</span><span class="p">(</span><span class="n">DATASET_URL</span><span class="p">,</span> <span class="s1">&#39;.&#39;</span><span class="p">)</span>
 </pre></div>
@@ -119,7 +119,7 @@ categories: jovianml
     <div class="prompt"></div>
 
 
-<div class="output_subarea output_stream output_stdout output_text">
+<div class="output_subarea output_stream output_stdout output_text overflow-table">
 <pre>Using downloaded and verified file: ./insurance.csv
 </pre>
 </div>
@@ -138,11 +138,11 @@ categories: jovianml
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
-<div class="input overflow-table">
+<div class="input">
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">dataframe_raw</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">DATA_FILENAME</span><span class="p">)</span>
+<div class=" highlight hl-ipython3 overflow-table"><pre><span></span><span class="n">dataframe_raw</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">DATA_FILENAME</span><span class="p">)</span>
 <span class="n">dataframe_raw</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
 
@@ -161,7 +161,7 @@ categories: jovianml
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
-<div>
+<div class="overflow-table">
 <style scoped>
     .dataframe tbody tr th:only-of-type {
         vertical-align: middle;
@@ -259,11 +259,11 @@ categories: jovianml
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
-<div class="input overflow-table">
+<div class="input">
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">your_name</span> <span class="o">=</span> <span class="s1">&#39;akashravichandran&#39;</span> <span class="c1"># at least 5 characters</span>
+<div class=" highlight hl-ipython3 overflow-table"><pre><span></span><span class="n">your_name</span> <span class="o">=</span> <span class="s1">&#39;akashravichandran&#39;</span> <span class="c1"># at least 5 characters</span>
 </pre></div>
 
     </div>
@@ -280,11 +280,11 @@ categories: jovianml
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
-<div class="input overflow-table">
+<div class="input">
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">customize_dataset</span><span class="p">(</span><span class="n">dataframe_raw</span><span class="p">,</span> <span class="n">rand_str</span><span class="p">):</span>
+<div class=" highlight hl-ipython3 overflow-table"><pre><span></span><span class="k">def</span> <span class="nf">customize_dataset</span><span class="p">(</span><span class="n">dataframe_raw</span><span class="p">,</span> <span class="n">rand_str</span><span class="p">):</span>
     <span class="n">dataframe</span> <span class="o">=</span> <span class="n">dataframe_raw</span><span class="o">.</span><span class="n">copy</span><span class="p">(</span><span class="n">deep</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
     <span class="c1"># drop some rows</span>
     <span class="n">dataframe</span> <span class="o">=</span> <span class="n">dataframe</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="mf">0.95</span><span class="o">*</span><span class="nb">len</span><span class="p">(</span><span class="n">dataframe</span><span class="p">)),</span> <span class="n">random_state</span><span class="o">=</span><span class="nb">int</span><span class="p">(</span><span class="nb">ord</span><span class="p">(</span><span class="n">rand_str</span><span class="p">[</span><span class="mi">0</span><span class="p">])))</span>
@@ -304,11 +304,11 @@ categories: jovianml
 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
-<div class="input overflow-table">
+<div class="input">
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">dataframe</span> <span class="o">=</span> <span class="n">customize_dataset</span><span class="p">(</span><span class="n">dataframe_raw</span><span class="p">,</span> <span class="n">your_name</span><span class="p">)</span>
+<div class=" highlight hl-ipython3 overflow-table"><pre><span></span><span class="n">dataframe</span> <span class="o">=</span> <span class="n">customize_dataset</span><span class="p">(</span><span class="n">dataframe_raw</span><span class="p">,</span> <span class="n">your_name</span><span class="p">)</span>
 <span class="n">dataframe</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
 
@@ -327,7 +327,7 @@ categories: jovianml
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
-<div>
+<div class="overflow-table">
 <style scoped>
     .dataframe tbody tr th:only-of-type {
         vertical-align: middle;
@@ -420,11 +420,11 @@ categories: jovianml
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
-<div class="input overflow-table">
+<div class="input">
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">num_rows</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">dataframe</span><span class="p">)</span>
+<div class=" highlight hl-ipython3 overflow-table"><pre><span></span><span class="n">num_rows</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">dataframe</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">num_rows</span><span class="p">)</span>
 </pre></div>
 
@@ -441,7 +441,7 @@ categories: jovianml
     <div class="prompt"></div>
 
 
-<div class="output_subarea output_stream output_stdout output_text">
+<div class="output_subarea output_stream output_stdout output_text overflow-table">
 <pre>1271
 </pre>
 </div>
@@ -460,11 +460,11 @@ categories: jovianml
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
-<div class="input overflow-table">
+<div class="input">
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">num_cols</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">dataframe</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span>
+<div class=" highlight hl-ipython3 overflow-table"><pre><span></span><span class="n">num_cols</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">dataframe</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">num_cols</span><span class="p">)</span>
 </pre></div>
 
@@ -481,7 +481,7 @@ categories: jovianml
     <div class="prompt"></div>
 
 
-<div class="output_subarea output_stream output_stdout output_text">
+<div class="output_subarea output_stream output_stdout output_text overflow-table">
 <pre>6
 </pre>
 </div>
@@ -500,11 +500,11 @@ categories: jovianml
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
-<div class="input overflow-table">
+<div class="input">
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">input_cols</span> <span class="o">=</span> <span class="p">[</span><span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">dataframe</span><span class="o">.</span><span class="n">columns</span> <span class="k">if</span> <span class="n">x</span> <span class="o">!=</span> <span class="s1">&#39;charges&#39;</span><span class="p">]</span>
+<div class=" highlight hl-ipython3 overflow-table"><pre><span></span><span class="n">input_cols</span> <span class="o">=</span> <span class="p">[</span><span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">dataframe</span><span class="o">.</span><span class="n">columns</span> <span class="k">if</span> <span class="n">x</span> <span class="o">!=</span> <span class="s1">&#39;charges&#39;</span><span class="p">]</span>
 </pre></div>
 
     </div>
@@ -513,11 +513,11 @@ categories: jovianml
 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
-<div class="input overflow-table">
+<div class="input">
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">input_cols</span>
+<div class=" highlight hl-ipython3 overflow-table"><pre><span></span><span class="n">input_cols</span>
 </pre></div>
 
     </div>
@@ -535,7 +535,7 @@ categories: jovianml
 
 
 
-<div class="output_text output_subarea output_execute_result">
+<div class="output_text output_subarea output_execute_result overflow-table">
 <pre>[&#39;age&#39;, &#39;sex&#39;, &#39;bmi&#39;, &#39;children&#39;, &#39;smoker&#39;]</pre>
 </div>
 
@@ -555,11 +555,11 @@ categories: jovianml
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
-<div class="input overflow-table">
+<div class="input">
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">categorical_cols</span> <span class="o">=</span> <span class="p">[</span><span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">dataframe</span><span class="o">.</span><span class="n">columns</span> <span class="k">if</span> <span class="n">dataframe</span><span class="p">[</span><span class="n">x</span><span class="p">]</span><span class="o">.</span><span class="n">dtype</span> <span class="o">==</span> <span class="nb">object</span><span class="p">]</span>
+<div class=" highlight hl-ipython3 overflow-table"><pre><span></span><span class="n">categorical_cols</span> <span class="o">=</span> <span class="p">[</span><span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">dataframe</span><span class="o">.</span><span class="n">columns</span> <span class="k">if</span> <span class="n">dataframe</span><span class="p">[</span><span class="n">x</span><span class="p">]</span><span class="o">.</span><span class="n">dtype</span> <span class="o">==</span> <span class="nb">object</span><span class="p">]</span>
 </pre></div>
 
     </div>
@@ -568,11 +568,11 @@ categories: jovianml
 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
-<div class="input overflow-table">
+<div class="input">
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">categorical_cols</span>
+<div class=" highlight hl-ipython3 overflow-table"><pre><span></span><span class="n">categorical_cols</span>
 </pre></div>
 
     </div>
@@ -590,7 +590,7 @@ categories: jovianml
 
 
 
-<div class="output_text output_subarea output_execute_result">
+<div class="output_text output_subarea output_execute_result overflow-table">
 <pre>[&#39;sex&#39;, &#39;smoker&#39;]</pre>
 </div>
 
@@ -609,11 +609,11 @@ categories: jovianml
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
-<div class="input overflow-table">
+<div class="input">
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">output_cols</span> <span class="o">=</span> <span class="p">[</span><span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">dataframe</span><span class="o">.</span><span class="n">columns</span> <span class="k">if</span> <span class="n">x</span> <span class="o">==</span> <span class="s1">&#39;charges&#39;</span><span class="p">]</span>
+<div class=" highlight hl-ipython3 overflow-table"><pre><span></span><span class="n">output_cols</span> <span class="o">=</span> <span class="p">[</span><span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">dataframe</span><span class="o">.</span><span class="n">columns</span> <span class="k">if</span> <span class="n">x</span> <span class="o">==</span> <span class="s1">&#39;charges&#39;</span><span class="p">]</span>
 </pre></div>
 
     </div>
@@ -622,11 +622,11 @@ categories: jovianml
 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
-<div class="input overflow-table">
+<div class="input">
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">output_cols</span>
+<div class=" highlight hl-ipython3 overflow-table"><pre><span></span><span class="n">output_cols</span>
 </pre></div>
 
     </div>
@@ -644,7 +644,7 @@ categories: jovianml
 
 
 
-<div class="output_text output_subarea output_execute_result">
+<div class="output_text output_subarea output_execute_result overflow-table">
 <pre>[&#39;charges&#39;]</pre>
 </div>
 
@@ -664,11 +664,11 @@ Use this data visualization cheatsheet for referece: <a href="https://jovian.ml/
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
-<div class="input overflow-table">
+<div class="input">
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Write your answer here</span>
+<div class=" highlight hl-ipython3 overflow-table"><pre><span></span><span class="c1"># Write your answer here</span>
 <span class="n">dataframe</span><span class="p">[</span><span class="s1">&#39;charges&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
 </pre></div>
 
@@ -687,7 +687,7 @@ Use this data visualization cheatsheet for referece: <a href="https://jovian.ml/
 
 
 
-<div class="output_text output_subarea output_execute_result">
+<div class="output_text output_subarea output_execute_result overflow-table">
 <pre>count     1271.000000
 mean     12914.769447
 std      11804.448766
@@ -706,11 +706,11 @@ Name: charges, dtype: float64</pre>
 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
-<div class="input overflow-table">
+<div class="input">
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Import libraries</span>
+<div class=" highlight hl-ipython3 overflow-table"><pre><span></span><span class="c1"># Import libraries</span>
 <span class="kn">import</span> <span class="nn">matplotlib</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 <span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
@@ -722,11 +722,11 @@ Name: charges, dtype: float64</pre>
 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
-<div class="input overflow-table">
+<div class="input">
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Configuring styles</span>
+<div class=" highlight hl-ipython3 overflow-table"><pre><span></span><span class="c1"># Configuring styles</span>
 <span class="n">sns</span><span class="o">.</span><span class="n">set_style</span><span class="p">(</span><span class="s2">&quot;darkgrid&quot;</span><span class="p">)</span>
 <span class="n">matplotlib</span><span class="o">.</span><span class="n">rcParams</span><span class="p">[</span><span class="s1">&#39;font.size&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">14</span>
 <span class="n">matplotlib</span><span class="o">.</span><span class="n">rcParams</span><span class="p">[</span><span class="s1">&#39;figure.figsize&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="mi">9</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
@@ -739,11 +739,11 @@ Name: charges, dtype: float64</pre>
 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
-<div class="input overflow-table">
+<div class="input">
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Distribution of Charges&quot;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3 overflow-table"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Distribution of Charges&quot;</span><span class="p">)</span>
 
 <span class="n">sns</span><span class="o">.</span><span class="n">distplot</span><span class="p">(</span><span class="n">dataframe</span><span class="o">.</span><span class="n">charges</span><span class="p">);</span>
 </pre></div>
@@ -784,11 +784,11 @@ Name: charges, dtype: float64</pre>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
-<div class="input overflow-table">
+<div class="input">
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># jovian.commit(project=project_name, environment=None)</span>
+<div class=" highlight hl-ipython3 overflow-table"><pre><span></span><span class="c1"># jovian.commit(project=project_name, environment=None)</span>
 </pre></div>
 
     </div>
@@ -805,11 +805,11 @@ Name: charges, dtype: float64</pre>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
-<div class="input overflow-table">
+<div class="input">
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">dataframe_to_arrays</span><span class="p">(</span><span class="n">dataframe</span><span class="p">):</span>
+<div class=" highlight hl-ipython3 overflow-table"><pre><span></span><span class="k">def</span> <span class="nf">dataframe_to_arrays</span><span class="p">(</span><span class="n">dataframe</span><span class="p">):</span>
     <span class="c1"># Make a copy of the original dataframe</span>
     <span class="n">dataframe1</span> <span class="o">=</span> <span class="n">dataframe</span><span class="o">.</span><span class="n">copy</span><span class="p">(</span><span class="n">deep</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
     <span class="c1"># Convert non-numeric categorical columns to numbers</span>
@@ -835,11 +835,11 @@ Name: charges, dtype: float64</pre>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
-<div class="input overflow-table">
+<div class="input">
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">inputs_array</span><span class="p">,</span> <span class="n">targets_array</span> <span class="o">=</span> <span class="n">dataframe_to_arrays</span><span class="p">(</span><span class="n">dataframe</span><span class="p">)</span>
+<div class=" highlight hl-ipython3 overflow-table"><pre><span></span><span class="n">inputs_array</span><span class="p">,</span> <span class="n">targets_array</span> <span class="o">=</span> <span class="n">dataframe_to_arrays</span><span class="p">(</span><span class="n">dataframe</span><span class="p">)</span>
 <span class="n">inputs_array</span><span class="p">,</span> <span class="n">targets_array</span>
 </pre></div>
 
@@ -858,7 +858,7 @@ Name: charges, dtype: float64</pre>
 
 
 
-<div class="output_text output_subarea output_execute_result">
+<div class="output_text output_subarea output_execute_result overflow-table">
 <pre>(array([[55.     ,  0.     , 35.06925,  2.     ,  0.     ],
         [63.     ,  0.     , 39.4295 ,  0.     ,  0.     ],
         [54.     ,  1.     , 42.372  ,  1.     ,  0.     ],
@@ -890,11 +890,11 @@ Name: charges, dtype: float64</pre>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
-<div class="input overflow-table">
+<div class="input">
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">inputs</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">(</span><span class="n">inputs_array</span><span class="p">)</span>
+<div class=" highlight hl-ipython3 overflow-table"><pre><span></span><span class="n">inputs</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">(</span><span class="n">inputs_array</span><span class="p">)</span>
 <span class="n">targets</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">(</span><span class="n">targets_array</span><span class="p">)</span>
 </pre></div>
 
@@ -904,11 +904,11 @@ Name: charges, dtype: float64</pre>
 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
-<div class="input overflow-table">
+<div class="input">
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">inputs</span><span class="o">.</span><span class="n">dtype</span><span class="p">,</span> <span class="n">targets</span><span class="o">.</span><span class="n">dtype</span>
+<div class=" highlight hl-ipython3 overflow-table"><pre><span></span><span class="n">inputs</span><span class="o">.</span><span class="n">dtype</span><span class="p">,</span> <span class="n">targets</span><span class="o">.</span><span class="n">dtype</span>
 </pre></div>
 
     </div>
@@ -926,7 +926,7 @@ Name: charges, dtype: float64</pre>
 
 
 
-<div class="output_text output_subarea output_execute_result">
+<div class="output_text output_subarea output_execute_result overflow-table">
 <pre>(torch.float32, torch.float32)</pre>
 </div>
 
@@ -945,11 +945,11 @@ Name: charges, dtype: float64</pre>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
-<div class="input overflow-table">
+<div class="input">
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">dataset</span> <span class="o">=</span> <span class="n">TensorDataset</span><span class="p">(</span><span class="n">inputs</span><span class="p">,</span> <span class="n">targets</span><span class="p">)</span>
+<div class=" highlight hl-ipython3 overflow-table"><pre><span></span><span class="n">dataset</span> <span class="o">=</span> <span class="n">TensorDataset</span><span class="p">(</span><span class="n">inputs</span><span class="p">,</span> <span class="n">targets</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -966,11 +966,11 @@ Name: charges, dtype: float64</pre>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
-<div class="input overflow-table">
+<div class="input">
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">torch.utils.data</span> <span class="k">import</span> <span class="n">random_split</span>
+<div class=" highlight hl-ipython3 overflow-table"><pre><span></span><span class="kn">from</span> <span class="nn">torch.utils.data</span> <span class="k">import</span> <span class="n">random_split</span>
 
 <span class="n">val_percent</span> <span class="o">=</span> <span class="mf">0.2</span> <span class="c1"># between 0.1 and 0.2</span>
 <span class="n">val_size</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">num_rows</span> <span class="o">*</span> <span class="n">val_percent</span><span class="p">)</span>
@@ -995,11 +995,11 @@ Name: charges, dtype: float64</pre>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
-<div class="input overflow-table">
+<div class="input">
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">batch_size</span> <span class="o">=</span> <span class="mi">64</span>
+<div class=" highlight hl-ipython3 overflow-table"><pre><span></span><span class="n">batch_size</span> <span class="o">=</span> <span class="mi">64</span>
 </pre></div>
 
     </div>
@@ -1008,11 +1008,11 @@ Name: charges, dtype: float64</pre>
 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
-<div class="input overflow-table">
+<div class="input">
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">train_loader</span> <span class="o">=</span> <span class="n">DataLoader</span><span class="p">(</span><span class="n">train_ds</span><span class="p">,</span> <span class="n">batch_size</span><span class="p">,</span> <span class="n">shuffle</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<div class=" highlight hl-ipython3 overflow-table"><pre><span></span><span class="n">train_loader</span> <span class="o">=</span> <span class="n">DataLoader</span><span class="p">(</span><span class="n">train_ds</span><span class="p">,</span> <span class="n">batch_size</span><span class="p">,</span> <span class="n">shuffle</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 <span class="n">val_loader</span> <span class="o">=</span> <span class="n">DataLoader</span><span class="p">(</span><span class="n">val_ds</span><span class="p">,</span> <span class="n">batch_size</span><span class="p">)</span>
 </pre></div>
 
@@ -1030,11 +1030,11 @@ Name: charges, dtype: float64</pre>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
-<div class="input overflow-table">
+<div class="input">
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">xb</span><span class="p">,</span> <span class="n">yb</span> <span class="ow">in</span> <span class="n">train_loader</span><span class="p">:</span>
+<div class=" highlight hl-ipython3 overflow-table"><pre><span></span><span class="k">for</span> <span class="n">xb</span><span class="p">,</span> <span class="n">yb</span> <span class="ow">in</span> <span class="n">train_loader</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;inputs:&quot;</span><span class="p">,</span> <span class="n">xb</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;targets:&quot;</span><span class="p">,</span> <span class="n">yb</span><span class="p">)</span>
     <span class="k">break</span>
@@ -1053,7 +1053,7 @@ Name: charges, dtype: float64</pre>
     <div class="prompt"></div>
 
 
-<div class="output_subarea output_stream output_stdout output_text">
+<div class="output_subarea output_stream output_stdout output_text overflow-table">
 <pre>inputs: tensor([[59.0000,  1.0000, 39.6970,  1.0000,  0.0000],
         [60.0000,  1.0000, 30.9230,  0.0000,  0.0000],
         [51.0000,  1.0000, 34.5610,  1.0000,  0.0000],
@@ -1199,11 +1199,11 @@ targets: tensor([[11976.7568],
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
-<div class="input overflow-table">
+<div class="input">
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># jovian.commit(project=project_name, environment=None)</span>
+<div class=" highlight hl-ipython3 overflow-table"><pre><span></span><span class="c1"># jovian.commit(project=project_name, environment=None)</span>
 </pre></div>
 
     </div>
@@ -1220,11 +1220,11 @@ targets: tensor([[11976.7568],
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
-<div class="input overflow-table">
+<div class="input">
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">input_size</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">input_cols</span><span class="p">)</span>
+<div class=" highlight hl-ipython3 overflow-table"><pre><span></span><span class="n">input_size</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">input_cols</span><span class="p">)</span>
 <span class="n">output_size</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">output_cols</span><span class="p">)</span>
 </pre></div>
 
@@ -1234,11 +1234,11 @@ targets: tensor([[11976.7568],
 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
-<div class="input overflow-table">
+<div class="input">
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">input_size</span><span class="p">,</span> <span class="n">output_size</span>
+<div class=" highlight hl-ipython3 overflow-table"><pre><span></span><span class="n">input_size</span><span class="p">,</span> <span class="n">output_size</span>
 </pre></div>
 
     </div>
@@ -1256,7 +1256,7 @@ targets: tensor([[11976.7568],
 
 
 
-<div class="output_text output_subarea output_execute_result">
+<div class="output_text output_subarea output_execute_result overflow-table">
 <pre>(5, 1)</pre>
 </div>
 
@@ -1276,11 +1276,11 @@ targets: tensor([[11976.7568],
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
-<div class="input overflow-table">
+<div class="input">
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">InsuranceModel</span><span class="p">(</span><span class="n">nn</span><span class="o">.</span><span class="n">Module</span><span class="p">):</span>
+<div class=" highlight hl-ipython3 overflow-table"><pre><span></span><span class="k">class</span> <span class="nc">InsuranceModel</span><span class="p">(</span><span class="n">nn</span><span class="o">.</span><span class="n">Module</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">linear</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">Linear</span><span class="p">(</span><span class="n">input_size</span><span class="p">,</span> <span class="n">output_size</span><span class="p">)</span>                 <span class="c1"># fill this (hint: use input_size &amp; output_size defined above)</span>
@@ -1330,11 +1330,11 @@ targets: tensor([[11976.7568],
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
-<div class="input overflow-table">
+<div class="input">
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">model</span> <span class="o">=</span> <span class="n">InsuranceModel</span><span class="p">()</span>
+<div class=" highlight hl-ipython3 overflow-table"><pre><span></span><span class="n">model</span> <span class="o">=</span> <span class="n">InsuranceModel</span><span class="p">()</span>
 </pre></div>
 
     </div>
@@ -1351,11 +1351,11 @@ targets: tensor([[11976.7568],
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
-<div class="input overflow-table">
+<div class="input">
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">list</span><span class="p">(</span><span class="n">model</span><span class="o">.</span><span class="n">parameters</span><span class="p">())</span>
+<div class=" highlight hl-ipython3 overflow-table"><pre><span></span><span class="nb">list</span><span class="p">(</span><span class="n">model</span><span class="o">.</span><span class="n">parameters</span><span class="p">())</span>
 </pre></div>
 
     </div>
@@ -1373,7 +1373,7 @@ targets: tensor([[11976.7568],
 
 
 
-<div class="output_text output_subarea output_execute_result">
+<div class="output_text output_subarea output_execute_result overflow-table">
 <pre>[Parameter containing:
  tensor([[0.4147, 0.1903, 0.0482, 0.2868, 0.0063]], requires_grad=True),
  Parameter containing:
@@ -1395,11 +1395,11 @@ targets: tensor([[11976.7568],
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
-<div class="input overflow-table">
+<div class="input">
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># jovian.commit(project=project_name, environment=None)</span>
+<div class=" highlight hl-ipython3 overflow-table"><pre><span></span><span class="c1"># jovian.commit(project=project_name, environment=None)</span>
 </pre></div>
 
     </div>
@@ -1416,11 +1416,11 @@ targets: tensor([[11976.7568],
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
-<div class="input overflow-table">
+<div class="input">
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">evaluate</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">val_loader</span><span class="p">):</span>
+<div class=" highlight hl-ipython3 overflow-table"><pre><span></span><span class="k">def</span> <span class="nf">evaluate</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">val_loader</span><span class="p">):</span>
     <span class="n">outputs</span> <span class="o">=</span> <span class="p">[</span><span class="n">model</span><span class="o">.</span><span class="n">validation_step</span><span class="p">(</span><span class="n">batch</span><span class="p">)</span> <span class="k">for</span> <span class="n">batch</span> <span class="ow">in</span> <span class="n">val_loader</span><span class="p">]</span>
     <span class="k">return</span> <span class="n">model</span><span class="o">.</span><span class="n">validation_epoch_end</span><span class="p">(</span><span class="n">outputs</span><span class="p">)</span>
 
@@ -1455,11 +1455,11 @@ targets: tensor([[11976.7568],
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
-<div class="input overflow-table">
+<div class="input">
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">result</span> <span class="o">=</span> <span class="n">evaluate</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">val_loader</span><span class="p">)</span> <span class="c1"># Use the the evaluate function</span>
+<div class=" highlight hl-ipython3 overflow-table"><pre><span></span><span class="n">result</span> <span class="o">=</span> <span class="n">evaluate</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">val_loader</span><span class="p">)</span> <span class="c1"># Use the the evaluate function</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
 </pre></div>
 
@@ -1476,7 +1476,7 @@ targets: tensor([[11976.7568],
     <div class="prompt"></div>
 
 
-<div class="output_subarea output_stream output_stdout output_text">
+<div class="output_subarea output_stream output_stdout output_text overflow-table">
 <pre>{&#39;val_loss&#39;: 12657.783203125}
 </pre>
 </div>
@@ -1504,11 +1504,11 @@ targets: tensor([[11976.7568],
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
-<div class="input overflow-table">
+<div class="input">
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">epochs</span> <span class="o">=</span> <span class="mi">300</span>
+<div class=" highlight hl-ipython3 overflow-table"><pre><span></span><span class="n">epochs</span> <span class="o">=</span> <span class="mi">300</span>
 <span class="n">lr</span> <span class="o">=</span> <span class="mf">1e-2</span>
 <span class="n">history1</span> <span class="o">=</span> <span class="n">fit</span><span class="p">(</span><span class="n">epochs</span><span class="p">,</span> <span class="n">lr</span><span class="p">,</span> <span class="n">model</span><span class="p">,</span> <span class="n">train_loader</span><span class="p">,</span> <span class="n">val_loader</span><span class="p">)</span>
 </pre></div>
@@ -1526,7 +1526,7 @@ targets: tensor([[11976.7568],
     <div class="prompt"></div>
 
 
-<div class="output_subarea output_stream output_stdout output_text">
+<div class="output_subarea output_stream output_stdout output_text overflow-table">
 <pre>Epoch [20], val_loss: 7312.8467
 Epoch [40], val_loss: 6897.0781
 Epoch [60], val_loss: 6845.4961
@@ -1551,11 +1551,11 @@ Epoch [300], val_loss: 6394.1011
 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
-<div class="input overflow-table">
+<div class="input">
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">losses</span> <span class="o">=</span> <span class="p">[</span><span class="n">r</span><span class="p">[</span><span class="s1">&#39;val_loss&#39;</span><span class="p">]</span> <span class="k">for</span> <span class="n">r</span> <span class="ow">in</span> <span class="p">[</span><span class="n">result</span><span class="p">]</span> <span class="o">+</span> <span class="n">history1</span><span class="p">]</span>
+<div class=" highlight hl-ipython3 overflow-table"><pre><span></span><span class="n">losses</span> <span class="o">=</span> <span class="p">[</span><span class="n">r</span><span class="p">[</span><span class="s1">&#39;val_loss&#39;</span><span class="p">]</span> <span class="k">for</span> <span class="n">r</span> <span class="ow">in</span> <span class="p">[</span><span class="n">result</span><span class="p">]</span> <span class="o">+</span> <span class="n">history1</span><span class="p">]</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">losses</span><span class="p">,</span> <span class="s1">&#39;-x&#39;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;epoch&#39;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;val_loss&#39;</span><span class="p">)</span>
@@ -1590,11 +1590,11 @@ Epoch [300], val_loss: 6394.1011
 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
-<div class="input overflow-table">
+<div class="input">
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">epochs</span> <span class="o">=</span> <span class="mi">300</span>
+<div class=" highlight hl-ipython3 overflow-table"><pre><span></span><span class="n">epochs</span> <span class="o">=</span> <span class="mi">300</span>
 <span class="n">lr</span> <span class="o">=</span> <span class="mf">1e-3</span>
 <span class="n">history2</span> <span class="o">=</span> <span class="n">fit</span><span class="p">(</span><span class="n">epochs</span><span class="p">,</span> <span class="n">lr</span><span class="p">,</span> <span class="n">model</span><span class="p">,</span> <span class="n">train_loader</span><span class="p">,</span> <span class="n">val_loader</span><span class="p">)</span>
 </pre></div>
@@ -1612,7 +1612,7 @@ Epoch [300], val_loss: 6394.1011
     <div class="prompt"></div>
 
 
-<div class="output_subarea output_stream output_stdout output_text">
+<div class="output_subarea output_stream output_stdout output_text overflow-table">
 <pre>Epoch [20], val_loss: 6392.0537
 Epoch [40], val_loss: 6389.9937
 Epoch [60], val_loss: 6387.9951
@@ -1637,11 +1637,11 @@ Epoch [300], val_loss: 6365.9580
 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
-<div class="input overflow-table">
+<div class="input">
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">losses</span> <span class="o">=</span> <span class="p">[</span><span class="n">r</span><span class="p">[</span><span class="s1">&#39;val_loss&#39;</span><span class="p">]</span> <span class="k">for</span> <span class="n">r</span> <span class="ow">in</span> <span class="p">[</span><span class="n">result</span><span class="p">]</span> <span class="o">+</span> <span class="n">history2</span><span class="p">]</span>
+<div class=" highlight hl-ipython3 overflow-table"><pre><span></span><span class="n">losses</span> <span class="o">=</span> <span class="p">[</span><span class="n">r</span><span class="p">[</span><span class="s1">&#39;val_loss&#39;</span><span class="p">]</span> <span class="k">for</span> <span class="n">r</span> <span class="ow">in</span> <span class="p">[</span><span class="n">result</span><span class="p">]</span> <span class="o">+</span> <span class="n">history2</span><span class="p">]</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">losses</span><span class="p">,</span> <span class="s1">&#39;-x&#39;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;epoch&#39;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;val_loss&#39;</span><span class="p">)</span>
@@ -1676,11 +1676,11 @@ Epoch [300], val_loss: 6365.9580
 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
-<div class="input overflow-table">
+<div class="input">
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">epochs</span> <span class="o">=</span> <span class="mi">300</span>
+<div class=" highlight hl-ipython3 overflow-table"><pre><span></span><span class="n">epochs</span> <span class="o">=</span> <span class="mi">300</span>
 <span class="n">lr</span> <span class="o">=</span> <span class="mf">1e-4</span>
 <span class="n">history3</span> <span class="o">=</span> <span class="n">fit</span><span class="p">(</span><span class="n">epochs</span><span class="p">,</span> <span class="n">lr</span><span class="p">,</span> <span class="n">model</span><span class="p">,</span> <span class="n">train_loader</span><span class="p">,</span> <span class="n">val_loader</span><span class="p">)</span>
 </pre></div>
@@ -1698,7 +1698,7 @@ Epoch [300], val_loss: 6365.9580
     <div class="prompt"></div>
 
 
-<div class="output_subarea output_stream output_stdout output_text">
+<div class="output_subarea output_stream output_stdout output_text overflow-table">
 <pre>Epoch [20], val_loss: 6365.8184
 Epoch [40], val_loss: 6365.6816
 Epoch [60], val_loss: 6365.5493
@@ -1723,11 +1723,11 @@ Epoch [300], val_loss: 6364.0801
 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
-<div class="input overflow-table">
+<div class="input">
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">losses</span> <span class="o">=</span> <span class="p">[</span><span class="n">r</span><span class="p">[</span><span class="s1">&#39;val_loss&#39;</span><span class="p">]</span> <span class="k">for</span> <span class="n">r</span> <span class="ow">in</span> <span class="p">[</span><span class="n">result</span><span class="p">]</span> <span class="o">+</span> <span class="n">history3</span><span class="p">]</span>
+<div class=" highlight hl-ipython3 overflow-table"><pre><span></span><span class="n">losses</span> <span class="o">=</span> <span class="p">[</span><span class="n">r</span><span class="p">[</span><span class="s1">&#39;val_loss&#39;</span><span class="p">]</span> <span class="k">for</span> <span class="n">r</span> <span class="ow">in</span> <span class="p">[</span><span class="n">result</span><span class="p">]</span> <span class="o">+</span> <span class="n">history3</span><span class="p">]</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">losses</span><span class="p">,</span> <span class="s1">&#39;-x&#39;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;epoch&#39;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;val_loss&#39;</span><span class="p">)</span>
@@ -1762,11 +1762,11 @@ Epoch [300], val_loss: 6364.0801
 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
-<div class="input overflow-table">
+<div class="input">
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">epochs</span> <span class="o">=</span> <span class="mi">300</span>
+<div class=" highlight hl-ipython3 overflow-table"><pre><span></span><span class="n">epochs</span> <span class="o">=</span> <span class="mi">300</span>
 <span class="n">lr</span> <span class="o">=</span> <span class="mf">1e-5</span>
 <span class="n">history4</span> <span class="o">=</span> <span class="n">fit</span><span class="p">(</span><span class="n">epochs</span><span class="p">,</span> <span class="n">lr</span><span class="p">,</span> <span class="n">model</span><span class="p">,</span> <span class="n">train_loader</span><span class="p">,</span> <span class="n">val_loader</span><span class="p">)</span>
 </pre></div>
@@ -1784,7 +1784,7 @@ Epoch [300], val_loss: 6364.0801
     <div class="prompt"></div>
 
 
-<div class="output_subarea output_stream output_stdout output_text">
+<div class="output_subarea output_stream output_stdout output_text overflow-table">
 <pre>Epoch [20], val_loss: 6364.0688
 Epoch [40], val_loss: 6364.0562
 Epoch [60], val_loss: 6364.0444
@@ -1809,11 +1809,11 @@ Epoch [300], val_loss: 6363.9028
 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
-<div class="input overflow-table">
+<div class="input">
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">losses</span> <span class="o">=</span> <span class="p">[</span><span class="n">r</span><span class="p">[</span><span class="s1">&#39;val_loss&#39;</span><span class="p">]</span> <span class="k">for</span> <span class="n">r</span> <span class="ow">in</span> <span class="p">[</span><span class="n">result</span><span class="p">]</span> <span class="o">+</span> <span class="n">history4</span><span class="p">]</span>
+<div class=" highlight hl-ipython3 overflow-table"><pre><span></span><span class="n">losses</span> <span class="o">=</span> <span class="p">[</span><span class="n">r</span><span class="p">[</span><span class="s1">&#39;val_loss&#39;</span><span class="p">]</span> <span class="k">for</span> <span class="n">r</span> <span class="ow">in</span> <span class="p">[</span><span class="n">result</span><span class="p">]</span> <span class="o">+</span> <span class="n">history4</span><span class="p">]</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">losses</span><span class="p">,</span> <span class="s1">&#39;-x&#39;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;epoch&#39;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;val_loss&#39;</span><span class="p">)</span>
@@ -1856,11 +1856,11 @@ Epoch [300], val_loss: 6363.9028
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
-<div class="input overflow-table">
+<div class="input">
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">val_loss</span> <span class="o">=</span> <span class="mi">0</span>
+<div class=" highlight hl-ipython3 overflow-table"><pre><span></span><span class="n">val_loss</span> <span class="o">=</span> <span class="mi">0</span>
 </pre></div>
 
     </div>
@@ -1877,11 +1877,11 @@ Epoch [300], val_loss: 6363.9028
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
-<div class="input overflow-table">
+<div class="input">
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># jovian.log_metrics(val_loss=val_loss)</span>
+<div class=" highlight hl-ipython3 overflow-table"><pre><span></span><span class="c1"># jovian.log_metrics(val_loss=val_loss)</span>
 </pre></div>
 
     </div>
@@ -1890,11 +1890,11 @@ Epoch [300], val_loss: 6363.9028
 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
-<div class="input overflow-table">
+<div class="input">
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># jovian.commit(project=project_name, environment=None)</span>
+<div class=" highlight hl-ipython3 overflow-table"><pre><span></span><span class="c1"># jovian.commit(project=project_name, environment=None)</span>
 </pre></div>
 
     </div>
@@ -1919,11 +1919,11 @@ Epoch [300], val_loss: 6363.9028
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
-<div class="input overflow-table">
+<div class="input">
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">predict_single</span><span class="p">(</span><span class="nb">input</span><span class="p">,</span> <span class="n">target</span><span class="p">,</span> <span class="n">model</span><span class="p">):</span>
+<div class=" highlight hl-ipython3 overflow-table"><pre><span></span><span class="k">def</span> <span class="nf">predict_single</span><span class="p">(</span><span class="nb">input</span><span class="p">,</span> <span class="n">target</span><span class="p">,</span> <span class="n">model</span><span class="p">):</span>
     <span class="n">inputs</span> <span class="o">=</span> <span class="nb">input</span><span class="o">.</span><span class="n">unsqueeze</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
     <span class="n">predictions</span> <span class="o">=</span> <span class="n">model</span><span class="p">(</span><span class="n">inputs</span><span class="p">)</span>          <span class="c1"># fill this</span>
     <span class="n">prediction</span> <span class="o">=</span> <span class="n">predictions</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">detach</span><span class="p">()</span>
@@ -1938,11 +1938,11 @@ Epoch [300], val_loss: 6363.9028
 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
-<div class="input overflow-table">
+<div class="input">
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">input</span><span class="p">,</span> <span class="n">target</span> <span class="o">=</span> <span class="n">val_ds</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<div class=" highlight hl-ipython3 overflow-table"><pre><span></span><span class="nb">input</span><span class="p">,</span> <span class="n">target</span> <span class="o">=</span> <span class="n">val_ds</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
 <span class="n">predict_single</span><span class="p">(</span><span class="nb">input</span><span class="p">,</span> <span class="n">target</span><span class="p">,</span> <span class="n">model</span><span class="p">)</span>
 </pre></div>
 
@@ -1959,7 +1959,7 @@ Epoch [300], val_loss: 6363.9028
     <div class="prompt"></div>
 
 
-<div class="output_subarea output_stream output_stdout output_text">
+<div class="output_subarea output_stream output_stdout output_text overflow-table">
 <pre>Input: tensor([61.0000,  0.0000, 33.3412,  0.0000,  0.0000])
 Target: tensor([13026.1641])
 Prediction: tensor([12234.5195])
@@ -1972,11 +1972,11 @@ Prediction: tensor([12234.5195])
 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
-<div class="input overflow-table">
+<div class="input">
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">input</span><span class="p">,</span> <span class="n">target</span> <span class="o">=</span> <span class="n">val_ds</span><span class="p">[</span><span class="mi">10</span><span class="p">]</span>
+<div class=" highlight hl-ipython3 overflow-table"><pre><span></span><span class="nb">input</span><span class="p">,</span> <span class="n">target</span> <span class="o">=</span> <span class="n">val_ds</span><span class="p">[</span><span class="mi">10</span><span class="p">]</span>
 <span class="n">predict_single</span><span class="p">(</span><span class="nb">input</span><span class="p">,</span> <span class="n">target</span><span class="p">,</span> <span class="n">model</span><span class="p">)</span>
 </pre></div>
 
@@ -1993,7 +1993,7 @@ Prediction: tensor([12234.5195])
     <div class="prompt"></div>
 
 
-<div class="output_subarea output_stream output_stdout output_text">
+<div class="output_subarea output_stream output_stdout output_text overflow-table">
 <pre>Input: tensor([19.0000,  1.0000, 36.8080,  0.0000,  0.0000])
 Target: tensor([1224.0032])
 Prediction: tensor([2799.2712])
@@ -2006,11 +2006,11 @@ Prediction: tensor([2799.2712])
 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
-<div class="input overflow-table">
+<div class="input">
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">input</span><span class="p">,</span> <span class="n">target</span> <span class="o">=</span> <span class="n">val_ds</span><span class="p">[</span><span class="mi">23</span><span class="p">]</span>
+<div class=" highlight hl-ipython3 overflow-table"><pre><span></span><span class="nb">input</span><span class="p">,</span> <span class="n">target</span> <span class="o">=</span> <span class="n">val_ds</span><span class="p">[</span><span class="mi">23</span><span class="p">]</span>
 <span class="n">predict_single</span><span class="p">(</span><span class="nb">input</span><span class="p">,</span> <span class="n">target</span><span class="p">,</span> <span class="n">model</span><span class="p">)</span>
 </pre></div>
 
@@ -2027,7 +2027,7 @@ Prediction: tensor([2799.2712])
     <div class="prompt"></div>
 
 
-<div class="output_subarea output_stream output_stdout output_text">
+<div class="output_subarea output_stream output_stdout output_text overflow-table">
 <pre>Input: tensor([25.0000,  0.0000, 26.0010,  3.0000,  0.0000])
 Target: tensor([4259.9023])
 Prediction: tensor([4570.5571])
@@ -2078,11 +2078,11 @@ Prediction: tensor([4570.5571])
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
-<div class="input overflow-table">
+<div class="input">
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># jovian.commit(project=project_name, environment=None)</span>
+<div class=" highlight hl-ipython3 overflow-table"><pre><span></span><span class="c1"># jovian.commit(project=project_name, environment=None)</span>
 <span class="c1"># jovian.commit(project=project_name, environment=None) # try again, kaggle fails sometimes</span>
 </pre></div>
 
@@ -2092,11 +2092,11 @@ Prediction: tensor([4570.5571])
 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
-<div class="input overflow-table">
+<div class="input">
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
+<div class=" highlight hl-ipython3 overflow-table"><pre><span></span> 
 </pre></div>
 
     </div>
