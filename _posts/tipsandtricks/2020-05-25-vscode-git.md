@@ -6,6 +6,11 @@ description: Setting vscode with git
 categories: tipsandtricks
 ---
 
+### Table of Contents
+* random line to make it work. This will be removed.
+{:toc}
+---
+
 ## Why this blog post
 
 If you are annoyed by vscode asking for your password each and every time you commit your changes. You should definitely check out the next set of steps to avoid it.
