@@ -307,8 +307,12 @@ table {
     border-bottom: 1px solid $light;
   }
 
-  th,
-  td,
+  th{
+    text-align: center! important;
+  }
+  td{
+    text-align: center! important;
+  }
   tr {
     border: 1px solid $light;
     padding: 2px 7px;
