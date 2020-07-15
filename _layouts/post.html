@@ -71,6 +71,11 @@ layout: compress
       </div>
       <br>
 
+      {% assign posts = site.posts | where_exp:"post", "post.url != page.url" | sample:3 %}
+      {% include related-post.html %}
+
+      <br>
+
       {% if page.comments %}
         {% include comments.html%}
       {% endif %}
