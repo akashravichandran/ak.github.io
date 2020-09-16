@@ -3,6 +3,7 @@ _site/
 .jekyll-cache/
 .jekyll-metadata
 _drafts
-Gemfile.lock
 .tweet-cache/
 .vscode/
+klise-*.gem
+Gemfile.lock

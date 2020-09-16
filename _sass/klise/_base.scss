@@ -1,4 +1,20 @@
 // Reset some basic elements
+* {
+  -webkit-transition: background-color 75ms ease-in, border-color 75ms ease-in;
+  -moz-transition: background-color 75ms ease-in, border-color 75ms ease-in;
+  -ms-transition: background-color 75ms ease-in, border-color 75ms ease-in;
+  -o-transition: background-color 75ms ease-in, border-color 75ms ease-in;
+  transition: background-color 75ms ease-in, border-color 75ms ease-in;
+}
+
+.notransition {
+  -webkit-transition: none;
+  -moz-transition: none; 
+  -ms-transition: none;
+  -o-transition: none;
+  transition: none;
+}
+
 html {
   overflow-x: hidden;
   width: 100%;
@@ -126,12 +142,13 @@ ul {
     text-align: -webkit-match-parent;
   }
   li::before {
-    content: "\03BB";
+    content: "\FE63";
     display: inline-block;
-    width: 1em;
+    top: -1px;
+    width: 1.2em;
     position: relative;
-    margin-left: -1em;
-    font-weight: $bold-weight;
+    margin-left: -1.3em;
+    font-weight: 700;
   }
 }
 

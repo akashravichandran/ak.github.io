@@ -16,6 +16,8 @@ author:
     </br>
     <p> &#127775; Reach for the stars &#127775; </p>
   username: akashravichandran
+  github: akashravichandran # github username
+  twitter: ak_avichandran # twitter username
   email: ak.ravichandran30@gmail.com
   avatar: /assets/img/ak10.png
 
@@ -56,7 +58,11 @@ jekyll_compose:
     tags: []
     description:
 
+# Homepage limit posts
+number_of_posts: 5
+
 # Build settings
+# theme: klise
 sass:
   style: compressed
 
@@ -73,6 +79,10 @@ exclude:
   - README.md
   - node_modules
   - CODE_OF_CONDUCT.md
+  - CONTRIBUTING.md
+  - lighthouse.png
+  - klise-*.gem
+  - klise.gemspec
 
 # Plugins
 plugins:
