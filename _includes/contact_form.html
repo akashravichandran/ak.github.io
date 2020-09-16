@@ -1,8 +1,8 @@
 <h1 class="author-name">Let’s start a conversation.</h1>
 
 <script type="text/javascript">var submitted=!1;</script>
-
-<style>
+<div class="contact-form">
+<!-- <style>
     input, select {
       width: 100%;
       padding: 12px 20px;
@@ -39,19 +39,20 @@
         background-color: #f8f8f8;
         resize: none;
     }
-</style>
-
+</style> -->
+<!-- <input type="search" id="search-input" placeholder="Find some articles here" aria-label="Search"> -->
 
 <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted)  {window.location='{{site.url}}/thankyou/';}"></iframe>
 
 <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeyP3Y69hF9ADDoIsh3cPVZPqu-EmqW4qj0qASVDyUJr_241g/formResponse" method="post" target="hidden_iframe"
 onsubmit="submitted=!0;">
-    <span><input name="entry.2005620554" type="text" placeholder="Name" /></span>
+    <span><input name="entry.2005620554" type="text" placeholder="name." /></span>
     <br>
-    <input name="entry.1045781291" type="email" placeholder="Email"/>
+    <input name="entry.1045781291" type="email" placeholder="email."/>
     <br>
-    <textarea rows="5" name="entry.1166974658" placeholder="Message"></textarea>
+    <textarea rows="5" name="entry.1166974658" placeholder="message."></textarea>
     <br>
-    <input type="submit" value="Send" />
+    <input type="submit" value="send." />
 
 </form>
+</div>

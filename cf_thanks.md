@@ -1,5 +1,5 @@
 ---
-title: thank you.
+title: thank you
 permalink: /thankyou/
 layout: page
 excerpt:
@@ -11,4 +11,4 @@ comments: false
 p {text-align: center;}
 </style>
 
-thanks for submitting the form, you will hear from me soon.
+thanks for submitting the form, you will hear from me soon!
