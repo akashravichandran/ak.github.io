@@ -2,23 +2,23 @@
   // Theme switch
   const body = document.body;
   const lamp = document.getElementById("mood");
-  const utterances = document.querySelector('iframe');
+  // const utterances = document.querySelector('iframe');
 
   const toggleTheme = (state) => {
     if (state === "dark") {
       localStorage.setItem("theme", "light");
       body.removeAttribute("data-theme");
-      utterances.contentWindow.postMessage(
-        {type: 'set-theme',theme: 'github-light'}, 
-        'https://utteranc.es'
-      );
+      // utterances.contentWindow.postMessage(
+      //   {type: 'set-theme',theme: 'github-light'}, 
+      //   'https://utteranc.es'
+      // );
     } else if (state === "light") {
       localStorage.setItem("theme", "dark");
       body.setAttribute("data-theme", "dark");
-      utterances.contentWindow.postMessage(
-        {type: 'set-theme',theme: 'github-dark'}, 
-        'https://utteranc.es'
-      );
+      // utterances.contentWindow.postMessage(
+      //   {type: 'set-theme',theme: 'github-dark'}, 
+      //   'https://utteranc.es'
+      // );
     } else {
       initTheme(state);
     }
