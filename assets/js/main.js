@@ -2,9 +2,9 @@
   // Theme switch
   const body = document.body;
   const lamp = document.getElementById("mood");
+  const utterances = document.querySelector('iframe');
 
   const toggleTheme = (state) => {
-    var utterances = document.querySelector('iframe');
     if (state === "dark") {
       localStorage.setItem("theme", "light");
       body.removeAttribute("data-theme");
