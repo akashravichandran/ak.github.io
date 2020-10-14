@@ -233,15 +233,18 @@
 
 // Content
 .posts-item-note {
-  font-size: $base-font-size;
+  font-size: $base-font-size * 1.5;
   font-weight: 700;
   margin-bottom: 5px;
   color: $black;
+  display: flex;
+  justify-content: center;
 }
 
 // List of posts
 .post-item {
   display: flex;
+  justify-content: center;
   padding-top: 5px;
   padding-bottom: 6px;
   @extend %clearfix;
@@ -280,8 +283,8 @@
     font-size: $base-font-size;
     font-weight: normal;
     letter-spacing: 0.1px;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
 
 
     a {
@@ -294,6 +297,34 @@
     }
   }
 }
+
+
+// List of posts
+.post-item-archive {
+  padding-top: 5px;
+  padding-bottom: 6px;
+  @extend %clearfix;
+
+  .post-item-title {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font-size: $base-font-size;
+    font-weight: normal;
+    letter-spacing: 0.1px;
+
+
+    a {
+      color: $text-base-color;
+
+      &:hover,
+      &focus {
+        color: $black;
+      }
+    }
+  }
+}
+
 
 // Footer
 .footer {
